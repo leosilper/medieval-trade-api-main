@@ -14,7 +14,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 	title = "Medieval Trade API", 
 	version = "v1", 
 	description = "API desenvolvida em Java que simula um mercado medieval, onde personagens podem cadastrar, comprar, vender e trocar itens mágicos como espadas encantadas, elixires e grimórios. Ideal para aplicações de RPG ou como base para projetos com foco em lógica de negócios, modelagem e APIs RESTful.", 
-	contact = @Contact(name = "Julio Oliveira & Leonardo Pereira", email = "dev.juliosamueloliveira@gmail.com & leosilper@gmail@gmail.com")))
+	contact = @Contact(name = "Julio Oliveira & Leonardo Pereira", email = "dev.juliosamueloliveira@gmail.com & leo10silva440@gmail.com")))
 public class App {
 
 	public static void main(String[] args) {

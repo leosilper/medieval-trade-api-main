@@ -52,5 +52,5 @@ Campos:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/JulioSamuelOliveira/medieval-trade-api.git
+   git clone https://github.com/leosilper/medieval-trade-api-main.git
    cd medieval-trade-api
