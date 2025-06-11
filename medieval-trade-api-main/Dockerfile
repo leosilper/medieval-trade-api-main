@@ -4,14 +4,17 @@ FROM eclipse-temurin:17-jdk
 # Diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copia os arquivos do projeto
+# Copia todos os arquivos do projeto para dentro do container
 COPY . .
 
-# Gera o JAR com Maven Wrapper
+# Dá permissão de execução ao wrapper do Maven
+RUN chmod +x mvnw
+
+# Gera o JAR usando o Maven Wrapper, sem rodar os testes
 RUN ./mvnw clean package -DskipTests
 
-# Expõe a porta (será sobrescrita pela env PORT no Render)
+# Expõe a porta usada pela aplicação (Render define via variável PORT)
 EXPOSE 8080
 
-# Comando de execução
+# Comando que roda a aplicação
 CMD ["java", "-jar", "target/medieval-trade-api-0.0.1-SNAPSHOT.jar"]
